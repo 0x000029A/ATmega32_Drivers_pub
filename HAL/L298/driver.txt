@@ -1,0 +1,33 @@
+	setPortStatus_DIO_u8(PORTA_u8_DIO, PORT_HIGH_u8_DIO);
+
+	while(1)
+	{
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN6_u8_DIO, LOW_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN7_u8_DIO, LOW_u8_DIO);
+
+
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN0_u8_DIO, HIGH_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN1_u8_DIO, LOW_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN3_u8_DIO, HIGH_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN4_u8_DIO, LOW_u8_DIO);
+
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN4_u8_DIO, HIGH_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN5_u8_DIO, HIGH_u8_DIO);
+
+		_delay_ms(15);	//delay
+
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN4_u8_DIO, LOW_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN5_u8_DIO, LOW_u8_DIO);
+
+
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN0_u8_DIO, HIGH_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN1_u8_DIO, LOW_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN3_u8_DIO, HIGH_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN4_u8_DIO, LOW_u8_DIO);
+
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN6_u8_DIO, HIGH_u8_DIO);
+		setPinValue_DIO_u8(PORTA_u8_DIO, PIN7_u8_DIO, HIGH_u8_DIO);
+
+		_delay_ms(15);	//delay
+
+	}

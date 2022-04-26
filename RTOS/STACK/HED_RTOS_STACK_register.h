@@ -1,0 +1,4 @@
+#ifndef HED_RTOS_STACK_REGISTER_H_
+#define HED_RTOS_STACK_REGISTER_H_
+
+#endif

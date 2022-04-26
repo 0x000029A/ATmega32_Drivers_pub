@@ -1,0 +1,5 @@
+#ifndef HED_HAL_LCD_ILI9486_PRIVATE_H_
+#define HED_HAL_LCD_ILI9486_PRIVATE_H_
+
+
+#endif

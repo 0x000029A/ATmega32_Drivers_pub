@@ -1,0 +1,63 @@
+#ifndef HED_MCAL_TIMER1_PRIVATE_H_
+#define HED_MCAL_TIMER1_PRIVATE_H_
+
+#define FC1A_DISABLED     (0)
+#define FC1A_ENABLED      (TCCR1A_FOC1A)
+
+#define FC1B_DISABLED     (0)
+#define FC1B_ENABLED      (TCCR1A_FOC1B)
+
+#define MODE0A   (0)
+#define MODE1A   (TCCR1A_WGM10)
+#define MODE2A   (TCCR1A_WGM11)
+#define MODE3A   (TCCR1A_WGM10 | TCCR1A_WGM11)
+#define MODE4A   (0)
+#define MODE5A   (TCCR1A_WGM10)
+#define MODE6A   (TCCR1A_WGM11)
+#define MODE7A   (TCCR1A_WGM10 | TCCR1A_WGM11)
+#define MODE8A   (0)
+#define MODE9A   (TCCR1A_WGM10)
+#define MODE10A  (TCCR1A_WGM11)
+#define MODE11A  (TCCR1A_WGM10 | TCCR1A_WGM11)
+#define MODE12A  (0)
+#define MODE13A  (TCCR1A_WGM10)
+#define MODE14A  (TCCR1A_WGM11)
+#define MODE15A  (TCCR1A_WGM10 | TCCR1A_WGM11)
+
+#define MODE0B   (0)
+#define MODE1B   (0)
+#define MODE2B   (0)
+#define MODE3B   (0)
+#define MODE4B   (TCCR1B_WGM12)
+#define MODE5B   (TCCR1B_WGM12)
+#define MODE6B   (TCCR1B_WGM12)
+#define MODE7B   (TCCR1B_WGM12)
+#define MODE8B   (TCCR1B_WGM13)
+#define MODE9B   (TCCR1B_WGM13)
+#define MODE10B  (TCCR1B_WGM13)
+#define MODE11B  (TCCR1B_WGM13)
+#define MODE12B  (TCCR1B_WGM12 | TCCR1B_WGM13)
+#define MODE13B  (TCCR1B_WGM12 | TCCR1B_WGM13)
+#define MODE14B  (TCCR1B_WGM12 | TCCR1B_WGM13)
+#define MODE15B  (TCCR1B_WGM12 | TCCR1B_WGM13)
+
+#define OC1A_DIS         (0)
+#define OC1A_TGL         (TCCR1A_COM1A0)
+#define OC1A_CLR         (TCCR1A_COM1A1)
+#define OC1A_SET         (TCCR1A_COM1A0 | TCCR1A_COM1A1)
+
+#define OC1B_DIS         (0)
+#define OC1B_TGL         (TCCR1A_COM1B0)
+#define OC1B_CLR         (TCCR1A_COM1B1)
+#define OC1B_SET         (TCCR1A_COM1B0 | TCCR1A_COM1B1)
+
+#define NO_CLK          (0)
+#define NO_PRS          (TCCR1B_CS10)
+#define DIV_BY_8        (TCCR1B_CS11)
+#define DIV_BY_64       (TCCR1B_CS10 | TCCR1B_CS11)
+#define DIV_BY_256      (TCCR1B_CS12)
+#define DIV_BY_1024     (TCCR1B_CS10 | TCCR1B_CS12)
+#define T0_CLK_ON_FALL  (TCCR1B_CS11 | TCCR1B_CS12)
+#define T0_CLCK_ON_RISE (TCCR1B_CS10 | TCCR1B_CS11 | TCCR1B_CS12)
+
+#endif

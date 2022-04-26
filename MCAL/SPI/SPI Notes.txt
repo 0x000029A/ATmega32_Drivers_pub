@@ -1,0 +1,17 @@
+Notes on SPI:
+Master:
+- Two shift registers in Master and Slave
+- To initiate communication cycle pull low on SS pin on slave
+- To send data, master should generate required clock pulses on SCK line
+- Data is shifted from master to slave on MOSI line
+- After each data packet, the master will synch the slave by pulling high on SS line
+- You have to control the SS line when you are the master
+- To send data, write a byte to SPI Data Register SPDR
+- When byte is written to SPDR, the clock generator starts
+- After shifting one byte, the clock stops, setting end of tranmission flag SPIF in SPSR
+- You cam eneable SPI interrupt by setting SPIE in SPCR register
+- You can send byte again by writing it to SPDR or it will end the transmission by sending high on SS line
+- The last incoming byte will be kept in the Buffer Register for later use
+
+Slave:
+- 
